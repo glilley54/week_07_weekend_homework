@@ -1,13 +1,15 @@
+import React from 'react'
 import RecipesContainer from "./containers/RecipesContainer";
+
 import './App.css';
 
 function App() {
   return (
   
-    <RecipesContainer/>
+    <RecipesContainer />
     
    
   );
-}
+};
 
 export default App;
