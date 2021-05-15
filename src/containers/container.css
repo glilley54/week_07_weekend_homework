@@ -19,18 +19,18 @@ body {
 
 header  {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
+    font-style: bold;
     font-size: xx-large;
     text-align: top;
-    padding: 50px;
+    padding: 100px;
 
 }
 
 #image {
     
     border-style: solid;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 200%;
+    max-height: 200%;
     align-self: center;
     border-width: 2px;
     border-color: white;
@@ -40,7 +40,7 @@ header  {
 }
 
 #select-box {
-    background-color: transparent;
+    background-color: white;
     border-style: none;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
