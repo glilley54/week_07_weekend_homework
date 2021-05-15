@@ -18,7 +18,7 @@ const RecipesContainer = function () {
     const getRecipes = function () {
     fetch('http://www.recipepuppy.com/api/')
     .then(res => res.json())
-    .then(recipes => setRecipes(recipes))
+    .then(recipes => setRecipes(recipes.results))
     
     
     }

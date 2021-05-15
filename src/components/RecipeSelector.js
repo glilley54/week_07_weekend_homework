@@ -8,7 +8,7 @@ const RecipeSelector = ({recipes, onRecipeSelected}) => {
     }
     
     const recipeOptions = recipes.map((recipe, index) => {
-      return <option value={index} key={index}>{recipe.name}</option>
+      return <option value={index} key={index}>{recipe.title}</option>
     })
 
     return (
