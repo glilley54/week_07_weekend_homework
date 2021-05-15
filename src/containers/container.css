@@ -1,0 +1,36 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    background-size: cover;
+    max-width: 100%;
+    max-height: auto;
+       
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+}
+
+#image {
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+   
+}
+
+#select-box {
+    background-color: transparent;
+    border-style: none;
+    position: relative;
+    font-family: Arial;
+    font-size: x-large;
+    font-style: bold;
+    color: white
+}
+
+.fav-recipes {
+    font-size: x-large;
+}
