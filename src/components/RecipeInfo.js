@@ -9,7 +9,7 @@ const RecipeInfo = ({selectedRecipe, onButtonClick}) => {
     
     return (
         <>
-            <h1>{selectedRecipe.title}</h1>
+            <h2>{selectedRecipe.title}</h2>
             <img id = "image" src={selectedRecipe.thumbnail}></img>
             <h2>Ingredients:</h2>
             <p>{selectedRecipe.ingredients}</p>

@@ -41,6 +41,7 @@ const RecipesContainer = function () {
     
   return (
     <div className="main-container">
+    <header>Recipe App</header>
     <RecipeSelector id = "recipes" 
     recipes = {recipes} 
     onRecipeClick = {onRecipeClick} 
