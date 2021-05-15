@@ -17,7 +17,7 @@ const RecipeInfo = ({selectedRecipe, onButtonClick}) => {
           
 
             
-            <button onClick={handleClick}>Add to Favourites</button>
+            <button class="button" onClick={handleClick}>Add to Favourites</button>
 
         </>
     );
