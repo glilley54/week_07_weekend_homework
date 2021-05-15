@@ -38,13 +38,15 @@ const RecipesContainer = function () {
     }
     
   return (
-      <>
-        <h1>Recipe Container</h1>
-        <RecipeSelector/>
-        
-        <RecipeInfo/>
-        </>
-        
+    <div className="main-container">
+    <RecipeSelector id = "recipes" 
+    recipes = {recipes} 
+    onRecipeClick = {onRecipeClick} 
+    selectedRecipe = {selectedRecipe}
+    onRecipeSelected = {onRecipeSelected}/>
+    <RecipeInfo selectedRecipe = {selectedRecipe} onButtonClick = {onButtonClick}/>
+    {/* <FavouriteRecipes favourites = {favourites} onButtonClick = {onButtonClick}/> */}
+</div>
       
   )
 

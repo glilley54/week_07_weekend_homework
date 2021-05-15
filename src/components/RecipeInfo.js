@@ -8,7 +8,7 @@ const RecipeInfo = ({selectedRecipe, onButtonClick}) => {
     
     return (
         <div >
-            <h1>Recipe Info</h1> 
+            <h1>Recipe Info {selectedRecipe.name}</h1> 
             
             <button onClick={handleClick}>Add to Favourites</button>
 
