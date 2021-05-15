@@ -5,10 +5,10 @@ import {useState, useEffect} from 'react';
 
 const RecipesContainer = function () {
 
-    const [recipes, setrecipes] = useState([])
+    const [recipes, setRecipes] = useState([])
     const [selectedRecipe, setSelectedRecipe] = useState([]);
-    const [favourites, setFavourites] = useState([])
-}
+    const [favourites, setFavourites] = useState([]);
+
 
     useEffect(() => {
         getRecipes()
@@ -19,15 +19,16 @@ const RecipesContainer = function () {
     .then(res => res.json())
     .then(recipes => setRecipes(recipes))
     
-}
+    }
   return (
-      <div>
-        <RecipeSelector>
+      <>
+        <h1>Recipe Container</h1>
+        </>
         
       
   )
 
-
+}
 
 
 
