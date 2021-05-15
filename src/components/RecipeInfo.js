@@ -1,20 +1,20 @@
-// import React from 'react'
+import React from 'react'
 
-// const RecipeInfo = ({selectedRecipe, onButtonClick}) => {
+const RecipeInfo = ({selectedRecipe, onButtonClick}) => {
 
-//     const handleClick = function() {
-//         onButtonClick(selectedRecipe)
-//     }
+    const handleClick = function() {
+        onButtonClick(selectedRecipe)
+    }
     
-//     return (
-//         <div >
-//             <h1> </h1> 
+    return (
+        <div >
+            <h1>Recipe Info</h1> 
             
-//             <button onClick={handleClick}>Add to Favourites</button>
+            <button onClick={handleClick}>Add to Favourites</button>
 
-//         </div>
-//     );
+        </div>
+    );
 
-// };
+};
 
-// export default RecipeInfo;
+export default RecipeInfo;

@@ -1,21 +1,21 @@
 import React from 'react';
 
-const RecipeSelector = ({recipes, onRecipesSelected}) => {
+const RecipeSelector = ({recipes, onRecipeSelected}) => {
 
     const handleChange = function(event) {
         const chosenRecipe = recipes[event.target.value];
         onRecipeSelected(chosenRecipe);
     }
     
-    const recipeOptions = recipes.map((recipes, index) => {
-      return <option value={index} key={index}>{recipe.name}</option>
+    const recipeOptions = recipes.map((recipe, index) => {
+      return <option value={index} key={index}>{recipe.title}</option>
     })
 
     return (
         <div id = "select-container">
             <select id = "select-box" defaultValue="" onChange={handleChange}>
-            <option value="" selected>Choose Recipe</option>
-            {RecipeOptions}
+            <option value="" selected>Choose a Recipe</option>
+            {recipeOptions}
             </select>
         </div>
     )
