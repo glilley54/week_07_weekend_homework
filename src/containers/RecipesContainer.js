@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import RecipeSelector from '../components/RecipeSelector';
 import RecipeInfo from '../components/RecipeInfo';
+import FavouriteRecipes from "../components/FavouriteRecipes";
 
 
 
@@ -45,7 +46,7 @@ const RecipesContainer = function () {
     selectedRecipe = {selectedRecipe}
     onRecipeSelected = {onRecipeSelected}/>
     <RecipeInfo selectedRecipe = {selectedRecipe} onButtonClick = {onButtonClick}/>
-    {/* <FavouriteRecipes favourites = {favourites} onButtonClick = {onButtonClick}/> */}
+    {<FavouriteRecipes favourites = {favourites} onButtonClick = {onButtonClick}/> }
 </div>
       
   )

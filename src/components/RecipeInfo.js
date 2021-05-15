@@ -4,15 +4,22 @@ const RecipeInfo = ({selectedRecipe, onButtonClick}) => {
 
     const handleClick = function() {
         onButtonClick(selectedRecipe)
+
     }
     
     return (
-        <div >
-            <h1>Recipe Info {selectedRecipe.name}</h1> 
+        <>
+            <h1>{selectedRecipe.title}</h1>
+            <img id = "image" src={selectedRecipe.thumbnail}></img>
+            <h2>Ingredients:</h2>
+            <p>{selectedRecipe.ingredients}</p>
+
+          
+
             
             <button onClick={handleClick}>Add to Favourites</button>
 
-        </div>
+        </>
     );
 
 };
